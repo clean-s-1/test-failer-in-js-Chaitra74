@@ -15,10 +15,5 @@ jobs:
 
       - name: Install Dependncies
         run:  sudo npm install
-      
-      - name: tshirts fail        
-
-      - name: misaligned fail
-        
-      - name: alerter fail
+    
         
