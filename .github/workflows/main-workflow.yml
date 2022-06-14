@@ -15,5 +15,13 @@ jobs:
 
       - name: Install Dependncies
         run:  sudo npm install
-    
+        
+      - name: tshirts fail
+        run: 'node TshirtSizeTester.js'
+
+      - name: misaligned fail
+        run: 'node MisalignedColorPairTester.js'
+
+      - name: alerter fail
+        run: 'node NetworkAlerterTester.js'
         
