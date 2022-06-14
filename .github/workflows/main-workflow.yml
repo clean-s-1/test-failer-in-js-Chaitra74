@@ -19,15 +19,15 @@ jobs:
       - name: tshirts fail
         run: |
           cd tshirts
-          'node TshirtSizeTester.js'
+          node TshirtSizeTester.js
 
       - name: misaligned fail
         run: |
           cd misaligned
-          'node MisalignedColorPairTester.js'
+          node MisalignedColorPairTester.js
 
       - name: alerter fail
         run: |
           cd alerter 
-          'node NetworkAlerterTester.js'
+          node NetworkAlerterTester.js
         
