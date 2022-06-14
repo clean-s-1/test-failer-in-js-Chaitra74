@@ -15,12 +15,19 @@ jobs:
 
       - name: Install Dependncies
         run:  sudo npm install
-      
+        
       - name: tshirts fail
-        run: bash .github/workflows/expectfail.sh node tshirts.js
+        run: |
+          cd tshirts
+          node TshirtSizeTester.js
 
       - name: misaligned fail
-        run: bash .github/workflows/expectfail.sh node misaligned.js
+        run: |
+          cd misaligned
+          node MisalignedColorPairTester.js
 
       - name: alerter fail
-        run: bash .github/workflows/expectfail.sh node alerter.js
+        run: |
+          cd alerter 
+          node NetworkAlerterTester.js
+        
