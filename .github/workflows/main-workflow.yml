@@ -17,11 +17,17 @@ jobs:
         run:  sudo npm install
         
       - name: tshirts fail
-        run: 'node TshirtSizeTester.js'
+        run: |
+          cd tshirts
+          'node TshirtSizeTester.js'
 
       - name: misaligned fail
-        run: 'node MisalignedColorPairTester.js'
+        run: |
+          cd misaligned
+          'node MisalignedColorPairTester.js'
 
       - name: alerter fail
-        run: 'node NetworkAlerterTester.js'
+        run: |
+          cd alerter 
+          'node NetworkAlerterTester.js'
         
